@@ -1,0 +1,20 @@
+# Data files (user-specific)
+data/
+
+# Logs
+*.log
+
+# Database
+*.db
+*.db-journal
+
+# Thumbnails
+_thumbs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
