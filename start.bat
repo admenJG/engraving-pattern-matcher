@@ -1,0 +1,31 @@
+@echo off
+echo ========================================
+echo ????????
+echo ========================================
+echo.
+
+cd /d "D:\??\????"
+
+set PYTHON=D:\??\????????\Python\python.exe
+set PYTHONW=D:\??\????????\Python\pythonw.exe
+
+echo ??Python??...
+"%PYTHON%" --version
+if errorlevel 1 (
+    echo Python???
+    pause
+    exit /b 1
+)
+
+echo.
+echo ????...
+"%PYTHON%" -c "import PyQt5; print('PyQt5 OK')"
+"%PYTHON%" -c "import numpy; print('numpy OK')"
+"%PYTHON%" -c "import PIL; print('Pillow OK')"
+"%PYTHON%" -c "import cv2; print('OpenCV OK')"
+
+echo.
+echo ??????...
+start "" "%PYTHONW%" main.py
+
+echo ?????????????
